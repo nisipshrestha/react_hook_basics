@@ -2,8 +2,11 @@ import './App.css';
 import ContextAPIExample from './ContextAPI';
 
 import Counter from './Counter';
+import Custom_hooks from './CustomHooks';
+import { HigherOrderComponents_RenderProps } from './HigherOrderComponents_RenderProps';
 import UseCallbackExample from './User_callback';
 import UseMemoExample from './Use_memo';
+import UseRefExample from './Use_ref';
 
 
 
@@ -13,7 +16,10 @@ function App() {
       {/* <Counter/> */}
       {/* <UseMemoExample/> */}
       {/* <UseCallbackExample /> */}
-      <ContextAPIExample />
+      {/* <ContextAPIExample /> */}
+      {/* <UseRefExample /> */}
+      {/* <HigherOrderComponents_RenderProps text={123} /> */}
+      <Custom_hooks />
     </div>
   );
 }
