@@ -21,13 +21,20 @@ const UseCallbackExample = () => {
     }
     useEffect(() => {
         getData();
-    }, [])
+    }, []);
+    // const handleSubmit = (arg, number) => {
+    //     console.log("arg", arg, number);
+    //     // POST API ....
+    //     console.log(data);
+    // };
 
     const handleSubmit = useCallback((arg, number) => {
         console.log("arg", arg, number);
         // POST API ....
         console.log(data);
     }, [data]);
+    checkRender.add(handleSubmit);
+    console.log(checkRender.size);
 
     return (
         <div>UseCallbackExample

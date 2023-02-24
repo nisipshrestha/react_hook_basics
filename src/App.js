@@ -1,5 +1,6 @@
 import './App.css';
 import ContextAPIExample from './ContextAPI';
+
 import Counter from './Counter';
 import UseCallbackExample from './User_callback';
 import UseMemoExample from './Use_memo';
@@ -12,7 +13,7 @@ function App() {
       {/* <Counter/> */}
       {/* <UseMemoExample/> */}
       {/* <UseCallbackExample /> */}
-      <ContextAPIExample/>
+      <ContextAPIExample />
     </div>
   );
 }

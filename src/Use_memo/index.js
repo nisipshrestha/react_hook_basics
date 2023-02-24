@@ -19,6 +19,9 @@ const UseMemoExample = () => {
         return data.filter(each => each.id % 2 === 0).slice(0, 21);
     }, [data]);
 
+    // const filteredArray =data.filter(each => each.id % 2 === 0).slice(0, 21);
+    checkRender.add(filteredArray)
+    console.log(checkRender.size);
     return (
         <div>UseMemoExample
             <button onClick={()=> setcounter(counter +1)}>{counter}</button>
